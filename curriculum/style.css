@@ -1,0 +1,413 @@
+/*
+
+Cambios principales realizados en el curriculum::
+
+TAREA 6
+1.- Se organizó el nav bar para que sus elementos se centraran y acomodaran de forma horizontal.
+2.- Se añadió una funcion especial al hover para que los botones del navbar tuvieran un leve movimiento de Y-2px (hacia arriba)
+3.- Se agrego una imagen de icono personal en la esquina superior derecha la cual sera reemplzada por una mía en el futuro
+4.- Se acomodaron las imagenes de forma simetrica y en horizontal, ademas se le agrego un borde para curveado para agregar esetica.
+
+TAREA 7
+1.- se cambio el fondo del body por un gris con degradado
+2.- se cambio fondos de sections para dar efecto glass.
+3.- se aplico ligero text shadow a h1, h2 y higlight.
+4.- se añadieron enlaces a github, facebook y linkdedin en la seccion de contacto.
+
+*/
+body {
+    font-family: 'Arimo', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+}
+
+header,
+nav,
+section,
+article,
+footer {
+    padding: 12px;
+    margin: 8px;
+}
+
+header h1 {
+    color: white;
+    margin-left: 0%;
+    margin-top: 15px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    margin-top: 60px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+h2 {
+    color: #5b0e91;
+    border-bottom: 2px solid #9d5bcc;
+    padding-bottom: 4px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+section,
+article {
+    background: linear-gradient(135deg, #ffffffcc, #f3e6ffcc);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    background: #9d5bcc;
+    color: white;
+    border: none;
+    cursor: pointer
+}
+
+button:hover {
+    background: #9d5bcc;
+}
+
+.highlight {
+    background-color: #8ff473;
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+header p {
+    margin-top: 40px;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+p.muted {
+    color: white;
+    margin-top: 5px;
+}
+
+
+.navbar {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+nav a {
+    color: #222;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+nav a:hover {
+    background-color: #9d5bcc;
+    color: #ffffff;
+
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+nav li {
+
+    margin-right: 10px;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.muted {
+    color: gray;
+    font-size: 0.9en;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.img-item {
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    /* Mínimo ancho para evitar que se achiquen demasiado */
+    max-width: 320px;
+    box-sizing: border-box;
+}
+
+.img-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: scale-down;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+}
+
+.foto-personal {
+    float: right;
+    width: 150px;
+    height: 120px;
+
+    border-radius: 8px;
+    margin-right: 40px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-nav {
+    display: block;
+    padding: 14px 20px;
+    background-color: #222;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.boton-nav:hover {
+    background-color: #9d5bcc;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.boton-nav:active {
+    transform: translateY(0);
+}
+
+#contacto {
+    background: linear-gradient(135deg, #ffffffcc, #f3e6ffcc);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+}
+
+a {
+    color: #222;
+    
+    margin: 0 60px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    background: #5b0e91;
+}
+
+/* --- Carrusel Estilos --- */
+.carousel-container {
+    position: relative;
+    max-width: 90%;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    outline: none;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.carousel-indicators div {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-indicators div.active {
+    background: #555;
+}
+
+download-cv {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-download:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-download:active {
+    transform: translateY(0);
+}
+
+/* --- Mensaje de Bienvenida Dinámico - Estilo Elegante --- */
+.bienvenida {
+    text-align: center;
+    padding: 24px 20px;
+    background: linear-gradient(135deg, #060609, #16213e);
+    color: #e6e6e6;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 16px 16px;
+    animation: fadeIn 1s ease-in-out;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
