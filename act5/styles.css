@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --color-espresso: #3C2F2F;
+    --color-coffee: #6F4E37;
+    --color-latte: #A98A72;
+    --color-cream: #F5EFE6;
+    --color-foam: #FCFBF8;
+    --color-accent: #E5793B;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color-foam);
+    color: var(--color-espresso);
+}
+
+h2, h3, h4,
+.display-4,
+.display-5 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    color: var(--color-espresso);
+}
+
+.btn-primary {
+    background-color: var(--color-coffee);
+    border-color: var(--color-coffee);
+    --bs-btn-hover-bg: #5a3f2b;
+    --bs-btn-hover-border-color: #5a3f2b;
+    --bs-btn-active-bg: #4a3424;
+    --bs-btn-active-border-color: #4a3424;
+    --bs-btn-focus-shadow-rgb: 111, 78, 55;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--color-coffee);
+    --bs-btn-border-color: var(--color-coffee);
+    --bs-btn-hover-bg: var(--color-coffee);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: var(--color-coffee);
+    --bs-btn-active-border-color: var(--color-coffee);
+    --bs-btn-focus-shadow-rgb: 111, 78, 55;
+}
+
+.badge.bg-primary {
+    background-color: var(--color-accent) !important;
+}
+
+.card {
+    border: 1px solid var(--color-cream);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(60, 47, 47, 0.1) !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+a {
+    color: var(--color-coffee);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--color-espresso);
+}
+
+.bg-light {
+    background-color: var(--color-cream) !important;
+    border: 1px solid #E9DDCF;
+}
+
+hr {
+    color: var(--color-latte);
+}
+
+.figure-img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.figure:hover .figure-img {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
+
+.form-control:focus {
+    border-color: var(--color-latte);
+    box-shadow: 0 0 0 0.25rem rgba(111, 78, 55, 0.25);
+}
+
+footer.bg-dark {
+    background-color: var(--color-espresso) !important;
+}
+
+.footer a.nav-link {
+    transition: color 0.2s ease;
+}
+
+.footer a.nav-link:hover {
+    color: #fff !important;
+}
